@@ -156,17 +156,20 @@ class AttireCalendar extends Component{
 
   renderModal=() =>{
     const {showAttireModal, selectedDateData} = this.state;
+    let footerArr = [
+      <Button key="back" onClick={this.closeModal}>Close</Button>
+    ]
+    if(selectedDateData.status !== 'Attached'){
+      footerArr.push(<Button key="submit" type="primary" onClick={this.saveAttire}>
+        Save
+      </Button>)
+    }
     return(
       <Modal
         onCancel={this.closeModal}
         title={`Attire for ${selectedDateData.day}, ${selectedDateData.date.format('MMMM Do YYYY')}`}
         visible={showAttireModal}
-        footer={[
-          <Button key="back" onClick={this.closeModal}>Close</Button>,
-          <Button key="submit" type="primary" className={`${selectedDateData.status === 'Attached' ? 'hide' : ''}`} onClick={this.saveAttire}>
-            Save
-          </Button>,
-        ]}
+        footer={footerArr}
       >
         {
           selectedDateData.status === 'Attached' && selectedDateData.photos.length ? this.renderUploadedPhotos(selectedDateData.photos) : this.renderPhotoSelection()

@@ -17,9 +17,6 @@
       text-align: left;
       color: #3D5AFE; }
 
-.hide {
-  display: none; }
-
 .photo-selection .selection-image-list {
   display: flex;
   flex-flow: row wrap;

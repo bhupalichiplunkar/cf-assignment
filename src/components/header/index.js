@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import { NavLink } from 'react-router-dom';
+import { clearState } from '../../utils/local-storage';
 
 const links=[
   {
@@ -13,7 +14,7 @@ const links=[
   }
 ]
 
-const Header = ({match}) => {
+const Header = () => {
   return (
     <header className="header">
       {
@@ -32,6 +33,7 @@ const Header = ({match}) => {
           </div>
         )
       }
+      <div className="button" onClick={clearState}> Clear Local Storage </div>
     </header>
   )
 }
