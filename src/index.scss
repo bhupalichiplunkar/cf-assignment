@@ -1,0 +1,74 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  img{
+    object-fit: cover;
+  }
+  .has-error .ant-form-explain, .has-error .ant-form-split {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .has-error .ant-select-selection {
+    border-width: 1px;    
+  }
+  .has-error .ant-input {
+    border-width: 1px;
+  }
+  .has-error .ant-input:hover {
+    border-width: 1px;
+  }
+  .ant-select-selection.ant-select-selection--multiple {
+    min-height: 60px;
+  }
+  .ant-form-item.error .ant-select {
+    border: 1px #FF4D5B solid;
+  }
+  .error.postcode-search input {
+    border: 1px #FF4D5B solid !important;    
+  }
+  .anticon.anticon-question-circle {
+    color: #909090;
+    cursor: pointer;
+    margin-left: 5px;  
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-weight: 200;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-weight: 200;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-weight: 200;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-weight: 200;
+  }
+  ::placeholder {
+    font-weight: 200;
+  }
+  .ant-select-selection__placeholder {
+    font-weight: 200;
+  }
+}
+
+.loader {
+  top: 200px;
+  .ant-modal-content {
+    position: relative;
+    background-color: transparent;
+    background-clip: padding-box;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    div {
+      display: flex;
+      align-content: center;
+      color: white;
+    }
+  }
+}
