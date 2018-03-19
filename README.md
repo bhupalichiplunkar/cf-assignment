@@ -5,7 +5,7 @@ Steps to get it up and running
 - Install node, npm/yarn.
 - Clone this repo and run ```cd cf-assignment```
 - Run ```yarn install / npm install```
-- Run ```yarn start``
+- Run ```yarn start```
 
 Assumptions: 
 - Used a random static server to host images and all data is store in local storage.
